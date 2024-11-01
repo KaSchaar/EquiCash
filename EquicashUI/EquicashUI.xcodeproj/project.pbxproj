@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4045BA42CD4E9B100C91D59 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = A4045BA32CD4E9B100C91D59 /* FirebaseCore */; };
+		A4045BA82CD4EEE300C91D59 /*  NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4045BA72CD4EEE300C91D59 /*  NavigationDestination.swift */; };
+		A4045BAA2CD4F15700C91D59 /* MemberCheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4045BA92CD4F15700C91D59 /* MemberCheckViewModel.swift */; };
+		A4045BAC2CD4F64F00C91D59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4045BAB2CD4F64F00C91D59 /* ContentView.swift */; };
+		A4FBBAC72CD52C2000D3EBCA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A4FBBAC62CD52C2000D3EBCA /* FirebaseAuth */; };
+		A4FBBAC92CD52C3700D3EBCA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A4FBBAC82CD52C3700D3EBCA /* FirebaseAnalytics */; };
+		A4FFDD322CD269CE0066BA5C /* EquicashUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD2F2CD269CE0066BA5C /* EquicashUIApp.swift */; };
+		A4FFDD332CD269CE0066BA5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FFDD2B2CD269CE0066BA5C /* Preview Assets.xcassets */; };
+		A4FFDD342CD269CE0066BA5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4FFDD2D2CD269CE0066BA5C /* Assets.xcassets */; };
+		A4FFDD3A2CD26A830066BA5C /* 001HauptmenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD392CD26A830066BA5C /* 001HauptmenuView.swift */; };
+		A4FFDD3C2CD26B210066BA5C /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD3B2CD26B210066BA5C /* ColorExtensions.swift */; };
+		A4FFDD3E2CD26BC00066BA5C /* 003RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD3D2CD26BC00066BA5C /* 003RegistrationView.swift */; };
+		A4FFDD422CD26F630066BA5C /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD412CD26F630066BA5C /* RegistrationViewModel.swift */; };
+		A4FFDD442CD271160066BA5C /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD432CD271160066BA5C /* ViewExtensions.swift */; };
+		A4FFDD4E2CD278E60066BA5C /* 004LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD4D2CD278E60066BA5C /* 004LoginView.swift */; };
+		A4FFDD542CD27D8B0066BA5C /* 002MembercheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD532CD27D8B0066BA5C /* 002MembercheckView.swift */; };
+		A4FFDD5C2CD2ABA40066BA5C /* 006ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD5B2CD2ABA40066BA5C /* 006ProductView.swift */; };
+		A4FFDD6E2CD2CC100066BA5C /* CustomCheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD6D2CD2CC100066BA5C /* CustomCheckboxToggleStyle.swift */; };
+		A4FFDD702CD2CE960066BA5C /* 005 StartScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD6F2CD2CE960066BA5C /* 005 StartScreenView.swift */; };
+		A4FFDD722CD2D0130066BA5C /* 007CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD712CD2D0130066BA5C /* 007CalendarView.swift */; };
+		A4FFDD742CD2D5A40066BA5C /* CalendarViewMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD732CD2D5A40066BA5C /* CalendarViewMode.swift */; };
+		A4FFDD762CD2D5CF0066BA5C /* Treatment..swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDD752CD2D5CF0066BA5C /* Treatment..swift */; };
+		A4FFDD7B2CD2D90C0066BA5C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A4FFDD7A2CD2D90C0066BA5C /* FirebaseAnalyticsOnDeviceConversion */; };
+		A4FFDD7D2CD2D90C0066BA5C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = A4FFDD7C2CD2D90C0066BA5C /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		A4FFDD7F2CD2D90C0066BA5C /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = A4FFDD7E2CD2D90C0066BA5C /* FirebaseAppCheck */; };
+		A4FFDD812CD2D90C0066BA5C /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A4FFDD802CD2D90C0066BA5C /* FirebaseAppDistribution-Beta */; };
+		A4FFDDDB2CD3C06D0066BA5C /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDDDA2CD3C06D0066BA5C /* AuthenticationView.swift */; };
+		A4FFDDDD2CD3C18B0066BA5C /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDDDC2CD3C18B0066BA5C /* AuthenticationViewModel.swift */; };
+		A4FFDE042CD4DA150066BA5C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A4FFDE032CD4DA150066BA5C /* FirebaseFirestore */; };
+		A4FFDE062CD4DC510066BA5C /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FFDE052CD4DC510066BA5C /* LoginViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4FFDD0F2CD269640066BA5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4FFDCF62CD269620066BA5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4FFDCFD2CD269620066BA5C;
+			remoteInfo = EquicashUI;
+		};
+		A4FFDD192CD269640066BA5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4FFDCF62CD269620066BA5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4FFDCFD2CD269620066BA5C;
+			remoteInfo = EquicashUI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4045BA72CD4EEE300C91D59 /*  NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " NavigationDestination.swift"; sourceTree = "<group>"; };
+		A4045BA92CD4F15700C91D59 /* MemberCheckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCheckViewModel.swift; sourceTree = "<group>"; };
+		A4045BAB2CD4F64F00C91D59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A4FBBAC32CD5289300D3EBCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A4FBBACA2CD52E1D00D3EBCA /* GoogleService-Info-plist.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-plist.plist"; sourceTree = "<group>"; };
+		A4FFDCFE2CD269620066BA5C /* EquicashUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EquicashUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FFDD0E2CD269640066BA5C /* EquicashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquicashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FFDD182CD269640066BA5C /* EquicashUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EquicashUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4FFDD2B2CD269CE0066BA5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4FFDD2D2CD269CE0066BA5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4FFDD2F2CD269CE0066BA5C /* EquicashUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquicashUIApp.swift; sourceTree = "<group>"; };
+		A4FFDD392CD26A830066BA5C /* 001HauptmenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 001HauptmenuView.swift; sourceTree = "<group>"; };
+		A4FFDD3B2CD26B210066BA5C /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		A4FFDD3D2CD26BC00066BA5C /* 003RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 003RegistrationView.swift; sourceTree = "<group>"; };
+		A4FFDD412CD26F630066BA5C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A4FFDD432CD271160066BA5C /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
+		A4FFDD4D2CD278E60066BA5C /* 004LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 004LoginView.swift; sourceTree = "<group>"; };
+		A4FFDD532CD27D8B0066BA5C /* 002MembercheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 002MembercheckView.swift; sourceTree = "<group>"; };
+		A4FFDD5B2CD2ABA40066BA5C /* 006ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 006ProductView.swift; sourceTree = "<group>"; };
+		A4FFDD6D2CD2CC100066BA5C /* CustomCheckboxToggleStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		A4FFDD6F2CD2CE960066BA5C /* 005 StartScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "005 StartScreenView.swift"; sourceTree = "<group>"; };
+		A4FFDD712CD2D0130066BA5C /* 007CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 007CalendarView.swift; sourceTree = "<group>"; };
+		A4FFDD732CD2D5A40066BA5C /* CalendarViewMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewMode.swift; sourceTree = "<group>"; };
+		A4FFDD752CD2D5CF0066BA5C /* Treatment..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment..swift; sourceTree = "<group>"; };
+		A4FFDDDA2CD3C06D0066BA5C /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		A4FFDDDC2CD3C18B0066BA5C /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		A4FFDE052CD4DC510066BA5C /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A4FFDD112CD269640066BA5C /* EquicashUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EquicashUITests;
+			sourceTree = "<group>";
+		};
+		A4FFDD1B2CD269640066BA5C /* EquicashUIUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = EquicashUIUITests;
+			sourceTree = "<group>";
+		};
+		A4FFDDCD2CD3BCB60066BA5C /* Firebase */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		A4FFDDD42CD3BDEE0066BA5C /* Repositories */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A4FFDDD82CD3BE9D0066BA5C /* API */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = API;
+			sourceTree = "<group>";
+		};
+		A4FFDDD92CD3BF070066BA5C /* Frameworks */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4FFDCFB2CD269620066BA5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FFDD7F2CD2D90C0066BA5C /* FirebaseAppCheck in Frameworks */,
+				A4FFDD812CD2D90C0066BA5C /* FirebaseAppDistribution-Beta in Frameworks */,
+				A4FBBAC92CD52C3700D3EBCA /* FirebaseAnalytics in Frameworks */,
+				A4FFDD7D2CD2D90C0066BA5C /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				A4FFDD7B2CD2D90C0066BA5C /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				A4045BA42CD4E9B100C91D59 /* FirebaseCore in Frameworks */,
+				A4FFDE042CD4DA150066BA5C /* FirebaseFirestore in Frameworks */,
+				A4FBBAC72CD52C2000D3EBCA /* FirebaseAuth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFDD0B2CD269640066BA5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFDD152CD269640066BA5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4FFDCF52CD269620066BA5C = {
+			isa = PBXGroup;
+			children = (
+				A4FFDD302CD269CE0066BA5C /* EquicashUI */,
+				A4FFDD112CD269640066BA5C /* EquicashUITests */,
+				A4FFDD1B2CD269640066BA5C /* EquicashUIUITests */,
+				A4FFDE002CD4D28D0066BA5C /* Frameworks */,
+				A4FFDCFF2CD269620066BA5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4FFDCFF2CD269620066BA5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFDCFE2CD269620066BA5C /* EquicashUI.app */,
+				A4FFDD0E2CD269640066BA5C /* EquicashUITests.xctest */,
+				A4FFDD182CD269640066BA5C /* EquicashUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4FFDD2C2CD269CE0066BA5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFDD2B2CD269CE0066BA5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4FFDD302CD269CE0066BA5C /* EquicashUI */ = {
+			isa = PBXGroup;
+			children = (
+				A4FBBAC32CD5289300D3EBCA /* Info.plist */,
+				A4FFDD352CD269D40066BA5C /* Models */,
+				A4FFDDCD2CD3BCB60066BA5C /* Firebase */,
+				A4FFDDD42CD3BDEE0066BA5C /* Repositories */,
+				A4FFDD382CD269FD0066BA5C /* views */,
+				A4FFDD362CD269E10066BA5C /* ViewModels */,
+				A4FFDD2C2CD269CE0066BA5C /* Preview Content */,
+				A4FFDD2D2CD269CE0066BA5C /* Assets.xcassets */,
+				A4FFDD2F2CD269CE0066BA5C /* EquicashUIApp.swift */,
+				A4FFDDD92CD3BF070066BA5C /* Frameworks */,
+			);
+			path = EquicashUI;
+			sourceTree = "<group>";
+		};
+		A4FFDD352CD269D40066BA5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFDDD82CD3BE9D0066BA5C /* API */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4FFDD362CD269E10066BA5C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFDD412CD26F630066BA5C /* RegistrationViewModel.swift */,
+				A4FFDD732CD2D5A40066BA5C /* CalendarViewMode.swift */,
+				A4FFDDDC2CD3C18B0066BA5C /* AuthenticationViewModel.swift */,
+				A4FFDE052CD4DC510066BA5C /* LoginViewModel.swift */,
+				A4045BA92CD4F15700C91D59 /* MemberCheckViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4FFDD382CD269FD0066BA5C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A4FFDD392CD26A830066BA5C /* 001HauptmenuView.swift */,
+				A4FFDD532CD27D8B0066BA5C /* 002MembercheckView.swift */,
+				A4FFDD3D2CD26BC00066BA5C /* 003RegistrationView.swift */,
+				A4FFDD4D2CD278E60066BA5C /* 004LoginView.swift */,
+				A4FFDD6F2CD2CE960066BA5C /* 005 StartScreenView.swift */,
+				A4FFDD5B2CD2ABA40066BA5C /* 006ProductView.swift */,
+				A4FFDD712CD2D0130066BA5C /* 007CalendarView.swift */,
+				A4FFDD432CD271160066BA5C /* ViewExtensions.swift */,
+				A4FFDD3B2CD26B210066BA5C /* ColorExtensions.swift */,
+				A4FFDD752CD2D5CF0066BA5C /* Treatment..swift */,
+				A4FFDD6D2CD2CC100066BA5C /* CustomCheckboxToggleStyle.swift */,
+				A4FFDDDA2CD3C06D0066BA5C /* AuthenticationView.swift */,
+				A4045BA72CD4EEE300C91D59 /*  NavigationDestination.swift */,
+				A4045BAB2CD4F64F00C91D59 /* ContentView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A4FFDE002CD4D28D0066BA5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4FBBACA2CD52E1D00D3EBCA /* GoogleService-Info-plist.plist */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4FFDCFD2CD269620066BA5C /* EquicashUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4FFDD222CD269640066BA5C /* Build configuration list for PBXNativeTarget "EquicashUI" */;
+			buildPhases = (
+				A4FFDCFA2CD269620066BA5C /* Sources */,
+				A4FFDCFB2CD269620066BA5C /* Frameworks */,
+				A4FFDCFC2CD269620066BA5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A4FFDDCD2CD3BCB60066BA5C /* Firebase */,
+				A4FFDDD42CD3BDEE0066BA5C /* Repositories */,
+				A4FFDDD82CD3BE9D0066BA5C /* API */,
+				A4FFDDD92CD3BF070066BA5C /* Frameworks */,
+			);
+			name = EquicashUI;
+			packageProductDependencies = (
+				A4FFDD7A2CD2D90C0066BA5C /* FirebaseAnalyticsOnDeviceConversion */,
+				A4FFDD7C2CD2D90C0066BA5C /* FirebaseAnalyticsWithoutAdIdSupport */,
+				A4FFDD7E2CD2D90C0066BA5C /* FirebaseAppCheck */,
+				A4FFDD802CD2D90C0066BA5C /* FirebaseAppDistribution-Beta */,
+				A4FFDE032CD4DA150066BA5C /* FirebaseFirestore */,
+				A4045BA32CD4E9B100C91D59 /* FirebaseCore */,
+				A4FBBAC62CD52C2000D3EBCA /* FirebaseAuth */,
+				A4FBBAC82CD52C3700D3EBCA /* FirebaseAnalytics */,
+			);
+			productName = EquicashUI;
+			productReference = A4FFDCFE2CD269620066BA5C /* EquicashUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4FFDD0D2CD269640066BA5C /* EquicashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4FFDD252CD269640066BA5C /* Build configuration list for PBXNativeTarget "EquicashUITests" */;
+			buildPhases = (
+				A4FFDD0A2CD269640066BA5C /* Sources */,
+				A4FFDD0B2CD269640066BA5C /* Frameworks */,
+				A4FFDD0C2CD269640066BA5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4FFDD102CD269640066BA5C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4FFDD112CD269640066BA5C /* EquicashUITests */,
+			);
+			name = EquicashUITests;
+			packageProductDependencies = (
+			);
+			productName = EquicashUITests;
+			productReference = A4FFDD0E2CD269640066BA5C /* EquicashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4FFDD172CD269640066BA5C /* EquicashUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4FFDD282CD269640066BA5C /* Build configuration list for PBXNativeTarget "EquicashUIUITests" */;
+			buildPhases = (
+				A4FFDD142CD269640066BA5C /* Sources */,
+				A4FFDD152CD269640066BA5C /* Frameworks */,
+				A4FFDD162CD269640066BA5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4FFDD1A2CD269640066BA5C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4FFDD1B2CD269640066BA5C /* EquicashUIUITests */,
+			);
+			name = EquicashUIUITests;
+			packageProductDependencies = (
+			);
+			productName = EquicashUIUITests;
+			productReference = A4FFDD182CD269640066BA5C /* EquicashUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4FFDCF62CD269620066BA5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A4FFDCFD2CD269620066BA5C = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					A4FFDD0D2CD269640066BA5C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A4FFDCFD2CD269620066BA5C;
+					};
+					A4FFDD172CD269640066BA5C = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = A4FFDCFD2CD269620066BA5C;
+					};
+				};
+			};
+			buildConfigurationList = A4FFDCF92CD269620066BA5C /* Build configuration list for PBXProject "EquicashUI" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4FFDCF52CD269620066BA5C;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A4FFDCFF2CD269620066BA5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4FFDCFD2CD269620066BA5C /* EquicashUI */,
+				A4FFDD0D2CD269640066BA5C /* EquicashUITests */,
+				A4FFDD172CD269640066BA5C /* EquicashUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4FFDCFC2CD269620066BA5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FFDD332CD269CE0066BA5C /* Preview Assets.xcassets in Resources */,
+				A4FFDD342CD269CE0066BA5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFDD0C2CD269640066BA5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFDD162CD269640066BA5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4FFDCFA2CD269620066BA5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FFDD3A2CD26A830066BA5C /* 001HauptmenuView.swift in Sources */,
+				A4FFDD442CD271160066BA5C /* ViewExtensions.swift in Sources */,
+				A4FFDD422CD26F630066BA5C /* RegistrationViewModel.swift in Sources */,
+				A4FFDD322CD269CE0066BA5C /* EquicashUIApp.swift in Sources */,
+				A4FFDD5C2CD2ABA40066BA5C /* 006ProductView.swift in Sources */,
+				A4045BAA2CD4F15700C91D59 /* MemberCheckViewModel.swift in Sources */,
+				A4FFDE062CD4DC510066BA5C /* LoginViewModel.swift in Sources */,
+				A4FFDD3C2CD26B210066BA5C /* ColorExtensions.swift in Sources */,
+				A4FFDD3E2CD26BC00066BA5C /* 003RegistrationView.swift in Sources */,
+				A4FFDD702CD2CE960066BA5C /* 005 StartScreenView.swift in Sources */,
+				A4FFDDDD2CD3C18B0066BA5C /* AuthenticationViewModel.swift in Sources */,
+				A4FFDD722CD2D0130066BA5C /* 007CalendarView.swift in Sources */,
+				A4FFDD742CD2D5A40066BA5C /* CalendarViewMode.swift in Sources */,
+				A4FFDDDB2CD3C06D0066BA5C /* AuthenticationView.swift in Sources */,
+				A4045BAC2CD4F64F00C91D59 /* ContentView.swift in Sources */,
+				A4FFDD542CD27D8B0066BA5C /* 002MembercheckView.swift in Sources */,
+				A4FFDD4E2CD278E60066BA5C /* 004LoginView.swift in Sources */,
+				A4FFDD762CD2D5CF0066BA5C /* Treatment..swift in Sources */,
+				A4FFDD6E2CD2CC100066BA5C /* CustomCheckboxToggleStyle.swift in Sources */,
+				A4045BA82CD4EEE300C91D59 /*  NavigationDestination.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFDD0A2CD269640066BA5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4FFDD142CD269640066BA5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4FFDD102CD269640066BA5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4FFDCFD2CD269620066BA5C /* EquicashUI */;
+			targetProxy = A4FFDD0F2CD269640066BA5C /* PBXContainerItemProxy */;
+		};
+		A4FFDD1A2CD269640066BA5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4FFDCFD2CD269620066BA5C /* EquicashUI */;
+			targetProxy = A4FFDD192CD269640066BA5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A4FFDD202CD269640066BA5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4FFDD212CD269640066BA5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4FFDD232CD269640066BA5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EquicashUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EquicashUI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.syntax-institut.EquicashUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4FFDD242CD269640066BA5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EquicashUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EquicashUI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.syntax-institut.EquicashUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4FFDD262CD269640066BA5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.syntax-institut.EquicashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquicashUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EquicashUI";
+			};
+			name = Debug;
+		};
+		A4FFDD272CD269640066BA5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.syntax-institut.EquicashUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EquicashUI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EquicashUI";
+			};
+			name = Release;
+		};
+		A4FFDD292CD269640066BA5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.syntax-institut.EquicashUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EquicashUI;
+			};
+			name = Debug;
+		};
+		A4FFDD2A2CD269640066BA5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.syntax-institut.EquicashUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EquicashUI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4FFDCF92CD269620066BA5C /* Build configuration list for PBXProject "EquicashUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FFDD202CD269640066BA5C /* Debug */,
+				A4FFDD212CD269640066BA5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4FFDD222CD269640066BA5C /* Build configuration list for PBXNativeTarget "EquicashUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FFDD232CD269640066BA5C /* Debug */,
+				A4FFDD242CD269640066BA5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4FFDD252CD269640066BA5C /* Build configuration list for PBXNativeTarget "EquicashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FFDD262CD269640066BA5C /* Debug */,
+				A4FFDD272CD269640066BA5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4FFDD282CD269640066BA5C /* Build configuration list for PBXNativeTarget "EquicashUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4FFDD292CD269640066BA5C /* Debug */,
+				A4FFDD2A2CD269640066BA5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4045BA32CD4E9B100C91D59 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		A4FBBAC62CD52C2000D3EBCA /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A4FBBAC82CD52C3700D3EBCA /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		A4FFDD7A2CD2D90C0066BA5C /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		A4FFDD7C2CD2D90C0066BA5C /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		A4FFDD7E2CD2D90C0066BA5C /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		A4FFDD802CD2D90C0066BA5C /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		A4FFDE032CD4DA150066BA5C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4FFDD772CD2D90C0066BA5C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A4FFDCF62CD269620066BA5C /* Project object */;
+}
