@@ -3,7 +3,7 @@
 // MemberCheckView.swift
 // Created by katy schaarschmidt on 30.10.24.
 
-import SwiftUI
+
 import SwiftUI
 
 struct MemberCheckView: View {
@@ -12,7 +12,7 @@ struct MemberCheckView: View {
     @State private var isRegisterActive = false
 
     var body: some View {
-        NavigationStack {
+        NavigationLink(destination: Text("")) {
             VStack(spacing: 40) {
                 Spacer()
 

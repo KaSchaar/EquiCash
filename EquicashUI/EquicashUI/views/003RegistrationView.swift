@@ -20,32 +20,60 @@ struct RegistrationView: View {
     @State private var isRegistering = false
     @State private var showSuccessMessage = false
     @State private var navigateToLogin = false
+    @FocusState private var focusedField: Field?
+
+    enum Field: Hashable {
+        case name, phoneNumber, email, password, passwordConfirmation
+    }
 
     var body: some View {
         NavigationStack {
-            Form {
-                Section(header: Text("Persönliche Daten")) {
-                    TextField("Name", text: $name)
-                    TextField("Telefonnummer", text: $phoneNumber)
-                }
+            VStack(spacing: 20) {
+                Text("Registrierung")
+                    .font(.largeTitle)
+                    .bold()
 
-                Section(header: Text("Anmeldedaten")) {
-                    TextField("E-Mail", text: $email)
-                        .autocorrectionDisabled()
-                        .textInputAutocapitalization(.never)
+                // Persönliche Daten
+                TextField("Name", text: $name)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($focusedField, equals: .name)
+                
+                TextField("Telefonnummer", text: $phoneNumber)
+                    .keyboardType(.phonePad)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($focusedField, equals: .phoneNumber)
+                
+                // Anmeldedaten
+                TextField("E-Mail", text: $email)
+                    .autocorrectionDisabled()
+                    .textInputAutocapitalization(.never)
+                    .keyboardType(.emailAddress)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($focusedField, equals: .email)
 
-                    SecureField("Passwort", text: $password)
-                    SecureField("Passwort wiederholen", text: $passwordConfirmation)
-                }
+                SecureField("Passwort", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($focusedField, equals: .password)
+                
+                SecureField("Passwort wiederholen", text: $passwordConfirmation)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .focused($focusedField, equals: .passwordConfirmation)
 
-                Section {
-                    Toggle("AGB akzeptieren", isOn: $agreeToTerms)
-                    Button("Registrieren") {
-                        registerUser()
-                    }
-                    .disabled(!agreeToTerms || isRegistering)
+                Toggle("AGB akzeptieren", isOn: $agreeToTerms)
+                    .padding()
+
+                Button("Registrieren") {
+                    registerUser()
                 }
+                .disabled(!agreeToTerms || isRegistering)
+                .padding()
+                .background(agreeToTerms ? Color.blue : Color.gray)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+
+                Spacer()
             }
+            .padding()
             .alert(isPresented: $showSuccessMessage) {
                 Alert(
                     title: Text("Registrierung erfolgreich!"),
@@ -62,6 +90,10 @@ struct RegistrationView: View {
                 Alert(title: Text("Fehler"), message: Text(errorMessage), dismissButton: .default(Text("OK"), action: {
                     errorMessage = ""
                 }))
+            }
+            .onAppear {
+                // Setzt den Fokus auf das erste Feld beim Laden der Ansicht
+                focusedField = .name
             }
         }
     }

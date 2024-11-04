@@ -7,49 +7,42 @@
 import SwiftUI
 
 struct HauptmenuView: View {
-    @State private var isPulsing = false // State für die Animation
-
     var body: some View {
         NavigationStack {
-            VStack(spacing: 40) {
-                Spacer()
-
+            VStack(spacing: 20) {
+                
+                // Titel zentriert über dem Button
                 Text("EquiCash")
                     .font(.system(size: 34, weight: .bold))
-                    .foregroundColor(Color(hex: "296372"))
+                    .foregroundColor(Color(hex: "296372")) // Verwendet Hex-Farbe über die erweiterte Funktion
 
-                // Logo-Button mit Navigation zur MemberCheckView
+                // NavigationLink mit dem Button, der zur MemberCheckView führt
                 NavigationLink(destination: MemberCheckView()) {
                     ZStack {
                         // Hintergrund des Buttons
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(Color(hex: "E3E0D8")) // Button-Hintergrundfarbe
-                            .frame(width: 150, height: 150)
+                            .fill(Color(hex: "E3E0D8")) // Hintergrundfarbe des Buttons
+                            .frame(width: 200, height: 200) // Button-Größe
                             .shadow(color: Color.black.opacity(0.2), radius: 10, x: 5, y: 5)
-                            .scaleEffect(isPulsing ? 1.05 : 1.0) // Leichte Skalierung
-                            .animation(
-                                Animation.easeInOut(duration: 1)
-                                    .repeatForever(autoreverses: true),
-                                value: isPulsing
-                            )
 
-                        // Logo-Bild in kleinerer Größe
-                        Image("logo") // Verweis auf das Logo in den Assets
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 120, height: 120) // Logo etwas kleiner
+                        // Logo zentriert im Button, mit Fehlerbehandlung falls das Bild fehlt
+                        if let logoImage = UIImage(named: "logo") {
+                            Image(uiImage: logoImage)
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 150, height: 150) // Logo etwas kleiner als der Button
+                        } else {
+                            Text("Logo fehlt") // Fallback-Text, falls das Bild nicht geladen werden kann
+                                .foregroundColor(.gray)
+                        }
                     }
                 }
-                .buttonStyle(PlainButtonStyle())
-                .onAppear {
-                    isPulsing = true // Startet die Animation beim Anzeigen der View
-                }
-
-                Spacer()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity) // Füllt den gesamten Bildschirm
-            .background(Color(hex: "E3E0D8")) // Hintergrundfarbe anwenden
+            .frame(maxWidth: .infinity, maxHeight: .infinity) // Bildschirmfüllend
+            .background(Color(hex: "E3E0D8")) // Hintergrundfarbe
             .ignoresSafeArea() // Hintergrund über gesamte Bildschirmfläche
+            .toolbar(.hidden, for: .navigationBar) // Entfernt die Toolbar, SwiftUI 5-konform
         }
     }
 }
+

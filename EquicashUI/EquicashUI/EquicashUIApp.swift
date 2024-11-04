@@ -5,29 +5,26 @@
 //  Created by katy schaarschmidt on 30.10.24.
 //
 
-
-import Firebase
 import SwiftUI
+import FirebaseCore
 
-
+// AppDelegate class for Firebase configuration
 class AppDelegate: NSObject, UIApplicationDelegate {
-  func application(_ application: UIApplication,
-                   didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    FirebaseApp.configure()
-    return true
-  }
+    func application(_ application: UIApplication,
+                     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
+        return true
+    }
 }
 
 @main
-struct YourApp: App {
-    // register app delegate for Firebase setup
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
+struct EquicashUIApp: App {
+    // Integrate AppDelegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            HauptmenuView()
         }
     }
 }
